@@ -1,0 +1,72 @@
+﻿@model WebStore.Models.Blog
+@{
+    ViewData["Title"] = "BlogDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>BlogDetail</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Img)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Img)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Detail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Detail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Datebegin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Datebegin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Order)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Order)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Link)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Link)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hide)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hide)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUsersNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdUsersNavigation.IdUsers)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdBlog">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
